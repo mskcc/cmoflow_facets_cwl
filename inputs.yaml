@@ -31,7 +31,7 @@ purity_ndepth: 35
 purity_min_nhet: 25
 genome: "hg19"
 directory: "." # output directory; set to current working directory by default
-R_lib: "0.5.6"
+R_lib: "0.5.14"
 single_chrom: "F"
 ggplot2: "T"
 seed: 100

@@ -7,6 +7,7 @@ facets_vcf: {
     }
     ]
   }
+
 bam_normal: { class: File, path: /bam/here }
 bam_tumor: { class: File, path: /bam/here }
 
@@ -19,6 +20,7 @@ max_depth: 4000
 min_base_quality: 0
 min_read_counts: 0
 min_base_quality: 0
+snp_pileup_output_file_name: "my_snp_pileup_output_file_name.dat.gz"
 
 # doFacets parameters
 cval: 100
@@ -31,10 +33,11 @@ purity_ndepth: 35
 purity_min_nhet: 25
 genome: "hg19"
 directory: "." # output directory; set to current working directory by default
-R_lib: "0.5.14"
+R_lib: "/usr/lib/R/library"
 single_chrom: "F"
 ggplot2: "T"
 seed: 100
+facets_output_prefix: "my_tumor_id"
 tumor_id: "my_tumor_id"
 
 # optional parameters

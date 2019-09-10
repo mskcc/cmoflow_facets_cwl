@@ -47,6 +47,9 @@ inputs:
   min_read_counts:
     type: int
 
+  snp_pileup_output_file_name:
+    type: string
+
   # doFacets parameters
   cval:
     type: int
@@ -91,6 +94,9 @@ inputs:
     type: int
 
   tumor_id:
+    type: string
+
+  facets_output_prefix:
     type: string
 
 outputs:
@@ -139,8 +145,7 @@ steps:
         min_base_quality: min_base_quality
         min_read_counts: min_read_counts
         min_map_quality: min_map_quality
-        output_file:
-          valueFrom: ${ return inputs.bam_normal.basename.replace(".bam", "") + "_" + inputs.bam_tumor.basename.replace(".bam", "") + ".dat.gz"; }
+        output_file: snp_pileup_output_file_name
     out: [ output_file ]
 
   do_facets:
@@ -148,8 +153,7 @@ steps:
     in:
       genome: genome
       counts_file: do_snp_pileup/output_file
-      TAG:
-        valueFrom: ${ return inputs.counts_file.basename.replace(".dat.gz", ""); }
+      TAG: facets_output_prefix
       tumor_id: tumor_id
       directory: directory
       cval: cval

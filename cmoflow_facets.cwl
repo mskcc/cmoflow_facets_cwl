@@ -129,7 +129,7 @@ outputs:
 steps:
 
   do_snp_pileup:
-    run: ../CommandLineTools/snp-pileup_0.1.1/htstools-0.1.1.cwl
+    run: ./htstools_0.1.1/snp-pileup.cwl
     in:
         vcf_file: facets_vcf
         bam_normal: bam_normal
@@ -147,7 +147,7 @@ steps:
     out: [ output_file ]
 
   do_facets:
-    run: ../CommandLineTools/facets_1.5.6/facets.doFacets-1.5.6.cwl
+    run: ./facets_1.5.6/facets.doFacets-1.5.6.cwl
     in:
       genome: genome
       counts_file: do_snp_pileup/output_file

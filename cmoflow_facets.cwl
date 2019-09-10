@@ -166,5 +166,4 @@ steps:
       single_chrom: single_chrom
       ggplot2: ggplot2
       seed: seed
-      tumor_id: tumor_id
     out: [ png_files, txt_files_purity, txt_files_hisens, out_files, rdata_files, seg_files ]

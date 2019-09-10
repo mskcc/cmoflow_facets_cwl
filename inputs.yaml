@@ -1,0 +1,42 @@
+facets_vcf: {
+  class: File,
+  path: /insert/your/path/here,
+  secondaryFiles: [
+      {
+        /insert/your/secondaryFile/path/here (.gz) 
+    }
+    ]
+  }
+bam_normal: { class: File, path: /bam/here }
+bam_tumor: { class: File, path: /bam/here }
+
+# snp-pileup parameters
+pseudo_snps: 50
+count_orphans: true
+gzip: true
+ignore_overlaps: false
+max_depth: 4000
+min_base_quality: 0
+min_read_counts: 0
+
+# doFacets parameters
+cval: 100
+snp_nbhd: 250
+ndepth: 35
+min_nhet: 25
+purity_cval: 500
+purity_snp_nbhd: 250
+purity_ndepth: 35
+purity_min_nhet: 25
+genome: "hg19"
+directory: "." # output directory; set to current working directory by default
+R_lib: "0.5.6"
+single_chrom: "F"
+ggplot2: "T"
+seed: 100
+tumor_id: "my_tumor_id"
+
+# optional parameters
+# dipLogR: no default set
+# counts_file: output from snp-pileup; so you shouldn't be setting this
+# TAG: also set from counts_file, or snp-pileup output

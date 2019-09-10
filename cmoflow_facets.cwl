@@ -68,9 +68,6 @@ inputs:
 
   purity_ndepth:
     type: int
- 
-  purity_ndepth:
-    type: int
 
   purity_min_nhet:
     type: int

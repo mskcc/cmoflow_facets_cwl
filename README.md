@@ -18,6 +18,6 @@ bam_tumor: { class: File, path: /bam/here }
 
 You can also edit specific parameters for `snp-pileup` and `doFacets` in the YAML.
 
-3. Once complete, submit to the executer using `cwltool` or `cwltoil`.
+3. Once complete, submit to the executor using `cwltool` (local runs) or `cwltoil` (cluster jobs).
 
-If you need a CWL executer, go to https://github.com/mskcc/cwl_run_scripts_juno - and follow the installation and run steps.
+If you need a CWL executor, go to https://github.com/mskcc/cwl_run_scripts_juno - and follow the installation and run steps.

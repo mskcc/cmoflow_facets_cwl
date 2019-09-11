@@ -1,15 +1,16 @@
+bam_normal: { class: File, path: /bam/here }
+bam_tumor: { class: File, path: /bam/here }
+
+# default vcf file used by facets
 facets_vcf: {
   class: File,
-  path: /insert/your/path/here (.vcf),
+  path: /ifs/depot/pi/resources/genomes/GRCh37/facets_snps/dbsnp_137.b37__RmDupsClean__plusPseudo50__DROP_SORT.vcf,
   secondaryFiles: [
       {
-        /insert/your/secondaryFile/path/here (.vcf.gz)
+        /ifs/depot/pi/resources/genomes/GRCh37/facets_snps/dbsnp_137.b37__RmDupsClean__plusPseudo50__DROP_SORT.vcf.gz
     }
     ]
   }
-
-bam_normal: { class: File, path: /bam/here }
-bam_tumor: { class: File, path: /bam/here }
 
 # snp-pileup parameters
 pseudo_snps: 50

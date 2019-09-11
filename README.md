@@ -3,7 +3,7 @@ CWL to mimic the logic in cmoflow_facets
 
 # Usage
 
-Prerequisite: You can run this CWL as-is using `cwltool` (if you have Docker) or `cwltool --singularity` (assuming you have `singularity` installed), but they will run locally. If you want to submit jobs to the JUNO cluster, we recommend using `cwltoil`; go to https://github.com/mskcc/cwl_run_scripts_juno - and follow the installation and run the basic bash script which streamlines that process.
+Prerequisite: You can run this CWL as-is using `cwltool` (if you have Docker) or `cwltool --singularity` (assuming you have `singularity` installed), but they will run locally. If you want to submit jobs to the JUNO cluster, we recommend using `cwltoil`; go to https://github.com/mskcc/cwl_run_scripts_juno - and follow the installation steps.
 
 1. Clone this repo and all its submodules to your working directory.
 

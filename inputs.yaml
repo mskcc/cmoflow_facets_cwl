@@ -1,5 +1,7 @@
 bam_normal: { class: File, path: /bam/here }
 bam_tumor: { class: File, path: /bam/here }
+facets_output_prefix: "my_tumor_id"
+tumor_id: "my_tumor_id"
 
 # default vcf file used by facets
 facets_vcf: {
@@ -39,8 +41,6 @@ R_lib: "/usr/lib/R/library"
 single_chrom: "F"
 ggplot2: "T"
 seed: 100
-facets_output_prefix: "my_tumor_id"
-tumor_id: "my_tumor_id"
 
 # optional parameters
 # dipLogR: no default set

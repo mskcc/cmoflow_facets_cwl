@@ -23,7 +23,7 @@ ignore_overlaps: false
 max_depth: 4000
 min_base_quality: 0
 min_read_counts: 0
-min_base_quality: 0
+min_map_quality: 0
 snp_pileup_output_file_name: "my_snp_pileup_output_file_name.dat.gz"
 
 # doFacets parameters

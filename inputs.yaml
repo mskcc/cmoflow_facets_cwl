@@ -24,7 +24,7 @@ ignore_overlaps: false
 max_depth: 4000
 min_base_quality: 0
 min_read_counts: 0
-min_base_quality: 0
+min_map_quality: 0
 
 # doFacets parameters
 cval: 100

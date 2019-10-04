@@ -100,7 +100,7 @@ inputs:
     type: string
 
   dipLogR:
-    type: string?
+    type: float?
 
 outputs:
 

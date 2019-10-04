@@ -15,6 +15,7 @@ facets_cwl_parser.add_argument('-nb',dest = 'bam_normal',type=str,help='File pat
 facets_cwl_parser.add_argument('-s',dest = 'snp_pileup_fname',type=str,help='SNP pileup file name')
 facets_cwl_parser.add_argument('-cval',dest = 'cval',type=str,help='Cval for FACETS')
 facets_cwl_parser.add_argument('-pcval',dest = 'pcval',type=str,help='Purity cval for FACETS')
+facets_cwl_parser.add_argument('-dlr',dest = 'diplogr',type=str,help='diplogr for FACETS')
 facets_cwl_parser.add_argument('-op',dest = 'facets_output_prefix',type=str,help='FACETS output files prefix')
 facets_cwl_parser.add_argument('-tid',dest = 'tumor_id',type=str,help='Tumor sample ID')
 facets_cwl_parser.add_argument('-yfp',dest = 'yaml_path',type=str,help='Template yaml file path')
@@ -37,7 +38,9 @@ facets_yaml['cval'] = int(args.cval)
 facets_yaml['purity_cval'] = int(args.pcval)
 facets_yaml['facets_output_prefix'] = args.facets_output_prefix
 facets_yaml['tumor_id'] = args.tumor_id
-
+if args.diplogr:
+    facets_yaml['dipLogR'] = float(args.diplogr)
+    
 
 #%%
 with open(args.output_path+'/'+args.tumor_id+'.yaml', "w") as f:

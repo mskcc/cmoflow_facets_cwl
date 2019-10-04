@@ -16,6 +16,9 @@ git clone --recursive https://github.com/mskcc/cmoflow_facets_cwl
 ```
 bam_normal: { class: File, path: /bam/here }
 bam_tumor: { class: File, path: /bam/here }
+facets_output_prefix: "my_tumor_id"
+tumor_id: "my_tumor_id"
+snp_pileup_output_file_name: "my_snp_pileup_output_file_name.dat.gz"
 ```
 
 You can also edit specific parameters for `snp-pileup` and `doFacets` in the YAML.

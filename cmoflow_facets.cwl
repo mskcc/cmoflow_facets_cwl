@@ -99,6 +99,9 @@ inputs:
   facets_output_prefix:
     type: string
 
+  dipLogR:
+    type: float?
+
 outputs:
 
   snp_pileup_out:
@@ -170,4 +173,5 @@ steps:
       single_chrom: single_chrom
       ggplot2: ggplot2
       seed: seed
+      dipLogR: dipLogR
     out: [ png_files, txt_files_purity, txt_files_hisens, out_files, rdata_files, seg_files ]
